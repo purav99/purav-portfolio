@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Purav | Cybersecurity Portfolio</title>
+  <title>Purav | Cybersecurity & Full Stack Developer</title>
 
   <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -18,7 +18,6 @@
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
   <style>
-    /* Particle background container */
     #particles-js {
       position: fixed;
       width: 100%;
@@ -27,10 +26,8 @@
       top: 0;
       left: 0;
     }
-
     body {
       font-family: 'JetBrains Mono', monospace;
-      /* Removed previous background gradient to use particles */
       background-color: #0f0f0f;
       background-attachment: fixed;
       color: #33ffcc;
@@ -38,7 +35,6 @@
     .glass {
       background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
     .neon-border {
@@ -62,8 +58,6 @@
     @keyframes blink {
       50% { border-color: transparent; }
     }
-
-    /* Fade-in for popup */
     .animate-fade-in {
       animation: fadeIn 0.8s ease-in-out;
     }
@@ -75,10 +69,8 @@
 </head>
 <body class="text-green-300 font-mono">
 
-  <!-- Particle Background -->
   <div id="particles-js"></div>
 
-  <!-- Topbar -->
   <div class="w-full glass text-green-400 py-2 px-4 flex justify-between items-center text-sm sticky top-0 z-50">
     <span>🧑‍💻 Agent: Purav</span>
     <span>Status: <span class="text-green-500">Online</span></span>
@@ -93,7 +85,6 @@
     updateClock();
   </script>
 
-  <!-- Welcome Popup -->
   <div id="hacker-popup" class="fixed top-6 right-6 glass border border-green-500 text-green-300 p-4 rounded shadow-lg hidden z-50 text-sm">
     🔐 Access granted. Welcome, Agent Purav!
   </div>
@@ -107,7 +98,6 @@
     });
   </script>
 
-  <!-- Lottie Intro -->
   <div class="flex flex-col items-center justify-center h-screen text-center">
     <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_jcikwtux.json" background="transparent" speed="1" style="width: 300px; height: 300px;" autoplay></lottie-player>
     <h1 class="text-5xl font-bold neon-text mt-4">Welcome, Agent Purav</h1>
@@ -115,12 +105,11 @@
     <a href="#about" class="mt-6 bg-green-600 text-black px-6 py-2 rounded hover:bg-green-500 transition">Enter</a>
   </div>
 
-  <!-- Header -->
   <header class="flex flex-col items-center text-center py-16" data-aos="zoom-in">
     <div class="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden neon-border shadow-lg mb-6">
       <img src="profile.jpg" alt="Purav" class="w-full h-full object-cover" />
     </div>
-    <h1 class="text-4xl md:text-5xl font-bold neon-text">Purav – Cybersecurity Enthusiast</h1>
+    <h1 class="text-4xl md:text-5xl font-bold neon-text">Purav – Cybersecurity & Full Stack Developer</h1>
     <p class="mt-2">📧 puravumesh33@gmail.com | 📞 +91-9900085466</p>
     <a href="https://www.linkedin.com/in/purav-umesh" target="_blank" class="text-green-400 hover:underline mt-2">🔗 LinkedIn</a>
     <p class="mt-3 text-green-400 text-lg typing-effect">>> Initializing secure shell access...</p>
@@ -133,43 +122,69 @@
       </a>
     </div>
   </header>
-  <!-- About -->
+
   <section id="about" class="py-20 px-6 md:px-24 glass rounded-xl m-6" data-aos="fade-up">
     <h2 class="text-3xl font-bold border-b-2 border-green-500 inline-block">🧠 About Me</h2>
     <p class="mt-4 max-w-3xl">
-      I'm Purav, a cybersecurity enthusiast passionate about ethical hacking, penetration testing, and building secure systems. I thrive on solving challenges and staying ahead of threats.
+      I'm <strong>Purav</strong>, a passionate <span class="neon-text">Cybersecurity Enthusiast</span> and a <span class="neon-text">Full Stack Developer</span> with hands-on experience in ethical hacking, network defense, and secure web application development. I believe in building tech that's both smart and secure.
+    </p>
+    <p class="mt-4 max-w-3xl">
+      In cybersecurity, I specialize in <strong>penetration testing</strong>, <strong>CTF solving</strong>, and <strong>Linux hardening</strong>. As a full-stack developer, I build robust applications using the MERN stack (MongoDB, Express, React, Node.js), integrated with modern tools like <strong>Tailwind CSS</strong>, <strong>Next.js</strong>, and REST APIs.
     </p>
   </section>
 
-  <!-- Skills -->
   <section id="skills" class="py-20 px-6 md:px-24 glass rounded-xl m-6" data-aos="fade-right">
     <h2 class="text-3xl font-bold border-b-2 border-green-500 inline-block">💻 Skills</h2>
     <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
       <li>🛡️ Ethical Hacking</li>
       <li>🔍 Vulnerability Scanning</li>
-      <li>💻 Linux & Scripting</li>
+      <li>💻 Linux & Bash Scripting</li>
       <li>🌐 Web App Security</li>
       <li>🕵️ OSINT & Recon</li>
       <li>📡 Network Monitoring</li>
+      <li>⚛️ React & Next.js</li>
+      <li>🟩 Node.js & Express</li>
+      <li>🎨 Tailwind CSS</li>
     </ul>
   </section>
 
-  <!-- Projects -->
+  <section id="developer" class="py-20 px-6 md:px-24 glass rounded-xl m-6" data-aos="fade-right">
+    <h2 class="text-3xl font-bold border-b-2 border-green-500 inline-block">🧑‍💻 Full Stack Developer</h2>
+    <p class="mt-4 max-w-3xl">
+      Beyond cybersecurity, I love to create user-friendly web applications with beautiful interfaces and strong backend architecture.
+    </p>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 text-green-300">
+      <li>⚛️ React.js & Next.js</li>
+      <li>🟩 Node.js & Express</li>
+      <li>🌐 REST APIs & JSON</li>
+      <li>📦 MongoDB & MySQL</li>
+      <li>🎨 Tailwind CSS & SCSS</li>
+      <li>🔒 JWT & Secure Auth</li>
+    </ul>
+  </section>
+
   <section id="projects" class="py-20 px-6 md:px-24 glass rounded-xl m-6" data-aos="fade-left">
     <h2 class="text-3xl font-bold border-b-2 border-green-500 inline-block">📁 Projects</h2>
     <div class="grid md:grid-cols-2 gap-6 mt-6">
       <div class="bg-black bg-opacity-30 p-4 border border-green-500 rounded-lg shadow-lg" data-aos="zoom-in">
         <h3 class="text-xl font-bold">GoldenEye TryHackMe</h3>
-        <p>Walkthrough covering enumeration, exploitation, and privesc on a vulnerable box.</p>
+        <p>Complete walkthrough with enumeration, web attack vectoring, and privilege escalation on a vulnerable box.</p>
       </div>
       <div class="bg-black bg-opacity-30 p-4 border border-green-500 rounded-lg shadow-lg" data-aos="zoom-in" data-aos-delay="100">
         <h3 class="text-xl font-bold">Linux Firewall Lab</h3>
-        <p>Built custom iptables firewall to log and block attacks in a VM network.</p>
+        <p>Custom iptables firewall to log, restrict and simulate network attacks in a virtual test environment.</p>
+      </div>
+      <div class="bg-black bg-opacity-30 p-4 border border-green-500 rounded-lg shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="text-xl font-bold">Portfolio Website (React + Tailwind)</h3>
+        <p>This very site – designed with animations, AOS scrolls, particle background, and built using Tailwind & vanilla JS.</p>
+      </div>
+      <div class="bg-black bg-opacity-30 p-4 border border-green-500 rounded-lg shadow-lg" data-aos="zoom-in" data-aos-delay="300">
+        <h3 class="text-xl font-bold">SecureAuth App (MERN Stack)</h3>
+        <p>User authentication system with JWT, password hashing, session expiration and protected routes (React + Node).</p>
       </div>
     </div>
   </section>
 
-  <!-- Journey -->
   <section id="journey" class="py-20 px-6 md:px-24 glass rounded-xl m-6" data-aos="fade-up">
     <h2 class="text-3xl font-bold border-b-2 border-green-500 inline-block">🚀 My Cyber Journey</h2>
     <p class="mt-4 max-w-3xl">
@@ -177,62 +192,33 @@
     </p>
   </section>
 
-  <!-- Contact -->
   <section id="contact" class="py-20 px-6 md:px-24 glass rounded-xl m-6" data-aos="fade-up">
-  <h2 class="text-3xl font-bold border-b-2 border-green-500 inline-block">📬 Contact</h2>
-  <form action="https://formspree.io/f/xkgznjno" method="POST" class="max-w-xl mx-auto mt-6 flex flex-col space-y-4">
-    <input type="hidden" name="_subject" value="New message from portfolio site" />
-    <input type="text" name="_gotcha" style="display:none" />
-    
-    <input name="name" type="text" placeholder="Your Name" required
-      class="w-full p-3 bg-gray-900 border border-green-500 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400" />
-    
-    <input name="email" type="email" placeholder="Your Email" required
-      class="w-full p-3 bg-gray-900 border border-green-500 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400" />
-    
-    <textarea name="message" placeholder="Your Message" required rows="5"
-      class="w-full p-3 bg-gray-900 border border-green-500 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400"></textarea>
-    
-    <button type="submit"
-      class="bg-green-500 text-black px-6 py-3 rounded hover:bg-green-400 font-bold transition duration-300">
-      Send
-    </button>
-  </form>
-</section>
-
+    <h2 class="text-3xl font-bold border-b-2 border-green-500 inline-block">📬 Contact</h2>
+    <form action="https://formspree.io/f/xkgznjno" method="POST" class="max-w-xl mx-auto mt-6 flex flex-col space-y-4">
+      <input type="hidden" name="_subject" value="New message from portfolio site" />
+      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 bg-gray-900 border border-green-500 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400" />
+      <input name="email" type="email" placeholder="Your Email" required class="w-full p-3 bg-gray-900 border border-green-500 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400" />
+      <textarea name="message" placeholder="Your Message" required rows="5" class="w-full p-3 bg-gray-900 border border-green-500 text-white rounded focus:outline-none focus:ring-2 focus:ring-green-400"></textarea>
+      <button type="submit" class="bg-green-500 text-black px-6 py-3 rounded hover:bg-green-400 font-bold transition duration-300">Send</button>
     </form>
   </section>
 
-  <!-- Floating Contact Icon -->
-  <a href="#contact" title="Contact Me"
-     class="fixed bottom-6 right-6 bg-green-500 text-black p-4 rounded-full shadow-lg hover:bg-green-400 transition-all duration-300 z-50">
-    📩
-  </a>
+  <a href="#contact" title="Contact Me" class="fixed bottom-6 right-6 bg-green-500 text-black p-4 rounded-full shadow-lg hover:bg-green-400 transition-all duration-300 z-50">📩</a>
 
-  <!-- Footer -->
   <footer class="text-center py-6 text-sm text-green-500">
     &copy; 2025 Purav | HD Cyber Portfolio
   </footer>
 
-  <!-- AOS Scroll Animation -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: false,
-      duration: 1200
-    });
-  </script>
+  <script>AOS.init({ once: false, duration: 1200 });</script>
 
-  <!-- Background Music -->
   <audio autoplay loop id="hacker-audio">
     <source src="https://files.catbox.moe/z60t0k.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- Click sound effect -->
   <audio id="click-sound" src="https://freesound.org/data/previews/256/256113_3263906-lq.mp3" preload="auto"></audio>
   <script>
     const clickSound = document.getElementById('click-sound');
-
     document.querySelectorAll('a, button').forEach(elem => {
       elem.addEventListener('click', () => {
         clickSound.currentTime = 0;
@@ -241,69 +227,30 @@
     });
   </script>
 
-  <!-- Particles.js library -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-  <!-- Particles.js init -->
   <script>
-    particlesJS('particles-js', 
-      {
-        "particles": {
-          "number": {
-            "value": 80,
-            "density": {
-              "enable": true,
-              "value_area": 800
-            }
-          },
-          "color": {
-            "value": "#00ffcc"
-          },
-          "shape": {
-            "type": "circle"
-          },
-          "opacity": {
-            "value": 0.2,
-            "random": true
-          },
-          "size": {
-            "value": 3,
-            "random": true
-          },
-          "move": {
-            "enable": true,
-            "speed": 2,
-            "direction": "none",
-            "out_mode": "bounce"
-          }
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: '#00ffcc' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.2, random: true },
+        size: { value: 3, random: true },
+        move: { enable: true, speed: 2, direction: 'none', out_mode: 'bounce' }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: { enable: true, mode: 'grab' },
+          onclick: { enable: true, mode: 'push' }
         },
-        "interactivity": {
-          "detect_on": "canvas",
-          "events": {
-            "onhover": {
-              "enable": true,
-              "mode": "grab"
-            },
-            "onclick": {
-              "enable": true,
-              "mode": "push"
-            }
-          },
-          "modes": {
-            "grab": {
-              "distance": 150,
-              "line_linked": {
-                "opacity": 0.5
-              }
-            },
-            "push": {
-              "particles_nb": 4
-            }
-          }
-        },
-        "retina_detect": true
-      }
-    );
+        modes: {
+          grab: { distance: 150, line_linked: { opacity: 0.5 } },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
   </script>
 
 </body>
